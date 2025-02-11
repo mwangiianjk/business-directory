@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyLocalBizDirectory.com - Your Local Business Directory</title>
+    <meta name="description" content="Find and list local businesses in your area. Connect with trusted local services, products, and job opportunities. Your one-stop platform for business discovery.">
+    <meta name="keywords" content="local business directory, business listings, local services, business opportunities, local marketplace">
+    <meta name="author" content="MyLocalBizDirectory.com">
+    <meta property="og:title" content="MyLocalBizDirectory.com - Your Local Business Directory">
+    <meta property="og:description" content="Discover and connect with trusted local businesses in your area.">
+    <meta property="og:url" content="https://MyLocalBizDirectory.com">
+    <link rel="canonical" href="https://MyLocalBizDirectory.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="top-menu">
+        <div class="dropdown">
+            <button class="dropbtn">Business Categories</button>
+            <div class="dropdown-content">
+                <a href="#">Restaurants & Cafes</a>
+                <a href="#">IT Services</a>
+                <a href="#">Health & Fitness</a>
+                <a href="#">Retail Shops</a>
+                <a href="#">Professional Services</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Business Location</button>
+            <div class="dropdown-content">
+                <a href="#">Nyahururu</a>
+                <a href="#">Nairobi</a>
+                <a href="#">Mombasa</a>
+                <a href="#">Kisumu</a>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search businesses...">
+            <button type="submit">Search</button>
+        </div>
+        <div class="action-buttons">
+            <button class="action-btn find-btn">Find Business</button>
+            <button class="action-btn list-btn">List Business</button>
+            <button class="sign-in-btn">Sign In</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Local Business Directory</h1>
+            <p>Discover the Best Local Businesses!</p>
+            <div class="content-section">
+                <h2>Empowering Local Commerce</h2>
+                <p>MyLocalBizDirectory.com is your gateway to discovering and connecting with thriving local businesses. We're dedicated to fostering economic growth and building stronger communities through digital connectivity.</p>
+                
+                <h3>Why List Your Business?</h3>
+                <p>Join thousands of successful businesses that have increased their visibility and customer base through our platform. From small startups to established enterprises, we provide the digital presence you need to grow.</p>
+                
+                <h3>For Business Seekers</h3>
+                <p>Find trusted local services, compare options, and make informed decisions. Our comprehensive directory features verified businesses across multiple categories, ensuring you find exactly what you're looking for.</p>
+            </div>
+        </header>
+
+        <section class="intro-section">
+            <div class="intro-content">
+                <h2>Discover Local Businesses</h2>
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800" alt="Local Business" class="intro-image">
+                <p>Connect with the best local businesses in your area. Whether you're looking for services, products, or job opportunities, our directory helps you find what you need.</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Business Growth" class="feature-image">
+                    <h3>Growing Businesses</h3>
+                    <p>List your business and reach more customers. Join our growing network of successful local entrepreneurs.</p>
+                </div>
+                
+                <div class="feature">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Job Opportunities" class="feature-image">
+                    <h3>Job Opportunities</h3>
+                    <p>Find employment opportunities with local businesses. Connect with employers looking for talent in your area.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="business-list">
+            <h2>Featured Businesses</h2>
+            <ul>
+                <li>Tech Solutions Inc - <a href="#" onclick="showDetails(this, 'Tech Solutions Inc', 'IT Services')">View Details</a></li>
+                <li>Green Garden Cafe - <a href="#" onclick="showDetails(this, 'Green Garden Cafe', 'Restaurant')">View Details</a></li>
+                <li>Fitness First Gym - <a href="#" onclick="showDetails(this, 'Fitness First Gym', 'Health & Fitness')">View Details</a></li>
+                <li>WAYAMOJA ENTERPRISE - <a href="#" onclick="showDetails(this, 'WAYAMOJA ENTERPRISE', 'Internet service provider', 'Chaphi house, 1st floor, Room 20, PO.BOX 1927-20300, Nyahururu, Kenya')">View Details</a></li>
+            </ul>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150" alt="User 1" class="testimonial-image">
+                    <p>"This directory helped me find the perfect local supplier for my small business. Highly recommended!"</p>
+                    <h4>Sarah Johnson</h4>
+                    <p class="role">Small Business Owner</p>
+                </div>
+                <div class="testimonial">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150" alt="User 2" class="testimonial-image">
+                    <p>"I listed my business here and saw an immediate increase in customer inquiries. Great platform!"</p>
+                    <h4>John Smith</h4>
+                    <p class="role">Local Restaurant Owner</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-us">
+            <h2>Why Choose Our Directory?</h2>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d" alt="Verified Listings" class="benefit-image">
+                    <h3>Verified Listings</h3>
+                    <p>All businesses are verified to ensure quality and reliability.</p>
+                </div>
+                <div class="benefit">
+                    <img src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1" alt="Local Support" class="benefit-image">
+                    <h3>Local Support</h3>
+                    <p>We focus on supporting and promoting local businesses in your community.</p>
+                </div>
+                <div class="benefit">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" alt="Easy Access" class="benefit-image">
+                    <h3>Easy Access</h3>
+                    <p>Simple and intuitive platform to find or list businesses quickly.</p>
+                </div>
+            </div>
+        </section>
+
+        <button onclick="addBusiness()" class="add-business-btn">Add Your Business</button>
+
+        <footer>
+            <p>&copy; 2024 Business Directory. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

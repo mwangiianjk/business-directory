@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+#business-list {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: pink;
+}
+#business-list a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+button {
+  background-color: violet;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text */
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #ff5733; /* Orange header */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+button {
+    background-color: #28a745; /* Green button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+<section class="business-list">
+    <h2>Local Businesses</h2>
+    <div class="business">
+        <h3>Nyahururu Hardware</h3>
+        <p>Supplier of quality building materials.</p>
+        <p>Location: Nyahururu Town</p>
+        <p>Contact: 0712 345 678</p>
+    </div>
+
+    <div class="business">
+        <h3>Java Coffee House</h3>
+        <p>Amazing coffee and fresh pastries.</p>
+        <p>Location: Nyeri CBD</p>
+        <p>Contact: 0701 234 567</p>
+    </div>
+</section>
+.business-list {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.business {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.business:last-child {
+    border-bottom: none;
+}
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+#searchBox {
+    width: 80%;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.business-item {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
