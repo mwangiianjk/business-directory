@@ -1,145 +1,552 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyLocalBizDirectory.com - Your Local Business Directory</title>
-    <meta name="description" content="Find and list local businesses in your area. Connect with trusted local services, products, and job opportunities. Your one-stop platform for business discovery.">
-    <meta name="keywords" content="local business directory, business listings, local services, business opportunities, local marketplace">
+    <title>MyLocalBizDirectory.com - Your Local Business Directory in Kenya</title>
+    <meta name="description" content="Find and list local businesses in Kenya. Connect with trusted local services, products, and job opportunities. Your one-stop platform for business discovery.">
+    <meta name="keywords" content="kenya business directory, kenyan businesses, local services kenya, business opportunities kenya, local marketplace kenya, business reviews kenya">
     <meta name="author" content="MyLocalBizDirectory.com">
-    <meta property="og:title" content="MyLocalBizDirectory.com - Your Local Business Directory">
-    <meta property="og:description" content="Discover and connect with trusted local businesses in your area.">
+    <meta property="og:title" content="MyLocalBizDirectory.com - Your Local Business Directory in Kenya">
+    <meta property="og:description" content="Discover and connect with trusted local businesses across Kenya.">
     <meta property="og:url" content="https://MyLocalBizDirectory.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://MyLocalBizDirectory.com/images/og-image.jpg">
     <link rel="canonical" href="https://MyLocalBizDirectory.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="top-menu">
-        <div class="dropdown">
-            <button class="dropbtn">Business Categories</button>
-            <div class="dropdown-content">
-                <a href="#">Restaurants & Cafes</a>
-                <a href="#">IT Services</a>
-                <a href="#">Health & Fitness</a>
-                <a href="#">Retail Shops</a>
-                <a href="#">Professional Services</a>
-            </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="LBD Logo" class="main-logo">
+            </a>
         </div>
-        <div class="dropdown">
-            <button class="dropbtn">Business Location</button>
-            <div class="dropdown-content">
-                <a href="#">Nyahururu</a>
-                <a href="#">Nairobi</a>
-                <a href="#">Mombasa</a>
-                <a href="#">Kisumu</a>
-            </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
         </div>
         <div class="search-container">
-            <input type="text" placeholder="Search businesses...">
-            <button type="submit">Search</button>
+            <input type="text" placeholder="Search for businesses...">
+            <button type="submit"><i class="fas fa-search"></i></button>
         </div>
         <div class="action-buttons">
-            <button class="action-btn find-btn">Find Business</button>
-            <button class="action-btn list-btn">List Business</button>
-            <button class="sign-in-btn">Sign In</button>
+            <a href="list-business.html" class="action-btn list-btn">List Your Business</a>
+            <a href="auth.html" class="sign-in-btn">Sign In</a>
         </div>
     </nav>
 
-    <div class="container">
-        <header>
-            <h1>Local Business Directory</h1>
-            <p>Discover the Best Local Businesses!</p>
-            <div class="content-section">
-                <h2>Empowering Local Commerce</h2>
-                <p>MyLocalBizDirectory.com is your gateway to discovering and connecting with thriving local businesses. We're dedicated to fostering economic growth and building stronger communities through digital connectivity.</p>
-                
-                <h3>Why List Your Business?</h3>
-                <p>Join thousands of successful businesses that have increased their visibility and customer base through our platform. From small startups to established enterprises, we provide the digital presence you need to grow.</p>
-                
-                <h3>For Business Seekers</h3>
-                <p>Find trusted local services, compare options, and make informed decisions. Our comprehensive directory features verified businesses across multiple categories, ensuring you find exactly what you're looking for.</p>
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1 data-aos="fade-up">Discover Local Businesses</h1>
+                <p data-aos="fade-up" data-aos-delay="100">Find the best local businesses in your area</p>
+                <div class="main-search" data-aos="fade-up" data-aos-delay="200">
+                    <input type="text" placeholder="Search for businesses...">
+                    <button type="button">Search</button>
+                </div>
             </div>
-        </header>
+        </section>
 
-        <section class="intro-section">
-            <div class="intro-content">
-                <h2>Discover Local Businesses</h2>
-                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800" alt="Local Business" class="intro-image">
-                <p>Connect with the best local businesses in your area. Whether you're looking for services, products, or job opportunities, our directory helps you find what you need.</p>
+        <section class="featured-businesses">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Featured Businesses</h2>
+                <div class="cards-grid">
+                    <a href="business-profile.html" class="business-card" data-aos="fade-up" data-business-id="coffee-house">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FmZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="The Coffee House">
+                        <div class="card-content">
+                            <h3>The Coffee House</h3>
+                            <p>Artisanal coffee and fresh pastries</p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </a>
+                    <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="100" data-business-id="tech-solutions">
+                        <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRlY2glMjBjb21wYW55fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Tech Solutions">
+                        <div class="card-content">
+                            <h3>Tech Solutions</h3>
+                            <p>Professional IT services and support</p>
+                            <div class="rating">★★★★☆</div>
+                        </div>
+                    </a>
+                    <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="200" data-business-id="green-gardens">
+                        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2FyZGVuaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Green Gardens">
+                        <div class="card-content">
+                            <h3>Green Gardens</h3>
+                            <p>Landscaping and garden maintenance</p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Browse Categories</h2>
+                <div class="tabs-container" data-aos="fade-up">
+                    <div class="tabs">
+                        <button class="tab-btn active" data-category="restaurants">Restaurants</button>
+                        <button class="tab-btn" data-category="hotels">Hotels & Accommodation</button>
+                        <button class="tab-btn" data-category="retail">Retail Shops</button>
+                        <button class="tab-btn" data-category="services">Professional Services</button>
+                        <button class="tab-btn" data-category="health">Health & Wellness</button>
+                        <button class="tab-btn" data-category="entertainment">Entertainment</button>
+                        <button class="tab-btn" data-category="jobs">Jobs</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="restaurants">
+                            <div class="cards-grid">
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-business-id="savanna-restaurant">
+                                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Savanna Restaurant">
+                                    <div class="card-content">
+                                        <h3>Savanna Restaurant</h3>
+                                        <p>Traditional Kenyan cuisine in a modern setting</p>
+                                        <div class="rating">★★★★☆</div>
+                                    </div>
+                                </a>
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="100" data-business-id="ocean-breeze">
+                                    <img src="https://images.unsplash.com/photo-1579027989536-b7b1f875659b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2VhZm9vZCUyMHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Ocean Breeze">
+                                    <div class="card-content">
+                                        <h3>Ocean Breeze</h3>
+                                        <p>Fresh seafood and coastal delicacies</p>
+                                        <div class="rating">★★★★★</div>
+                                    </div>
+                                </a>
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="200" data-business-id="spice-route">
+                                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwcmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Spice Route">
+                                    <div class="card-content">
+                                        <h3>Spice Route</h3>
+                                        <p>Authentic Indian cuisine and spices</p>
+                                        <div class="rating">★★★★☆</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="hotels">
+                            <div class="cards-grid">
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-business-id="serena-hotel">
+                                    <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRlY2glMjBjb21wYW55fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Hotel 1">
+                                    <div class="card-content">
+                                        <h3>Serena Hotel</h3>
+                                        <p>Luxury accommodation with stunning views</p>
+                                        <div class="rating">★★★★★</div>
+                                    </div>
+                                </a>
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="100" data-business-id="safari-lodge">
+                                    <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2FyZGVuaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Hotel 2">
+                                    <div class="card-content">
+                                        <h3>Safari Lodge</h3>
+                                        <p>Experience the wild in comfort</p>
+                                        <div class="rating">★★★★☆</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="jobs">
+                            <div class="cards-grid">
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-business-id="waya-moja-enterprise">
+                                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29ycG9yYXRlJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="WAYA MOJA ENTERPRISE">
+                                    <div class="card-content">
+                                        <h3>WAYA MOJA ENTERPRISE</h3>
+                                        <p>Leading technology solutions and business consulting firm. Specializing in software development, IT infrastructure, and digital transformation.</p>
+                                        <div class="rating">★★★★★</div>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</span>
+                                            <span class="category">Technology & Consulting</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- Add more job listings here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="browse-locations">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Browse Locations</h2>
+                <div class="tabs-container">
+                    <div class="location-tabs" data-aos="fade-up">
+                        <button class="location-tab-btn active" data-location="nairobi">Nairobi</button>
+                        <button class="location-tab-btn" data-location="mombasa">Mombasa</button>
+                        <button class="location-tab-btn" data-location="kisumu">Kisumu</button>
+                        <button class="location-tab-btn" data-location="nakuru">Nakuru</button>
+                        <button class="location-tab-btn" data-location="nyahururu">Nyahururu</button>
+                        <button class="location-tab-btn" data-location="eldoret">Eldoret</button>
+                        <button class="location-tab-btn" data-location="thika">Thika</button>
+                    </div>
+                    <div class="location-content">
+                        <div class="location-pane active" id="nairobi">
+                            <div class="cards-grid">
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-business-id="waya-moja-enterprise-nairobi">
+                                    <img src="https://images.unsplash.com/photo-1611348586804-61bf6c080437?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmFpcm9iaSUyMGNpdHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="WAYA MOJA ENTERPRISE Nairobi">
+                                    <div class="card-content">
+                                        <h3>WAYA MOJA ENTERPRISE</h3>
+                                        <p>Headquarters - Technology Hub</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Westlands, Nairobi</span>
+                                            <span class="category">Technology & Consulting</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="100" data-business-id="the-garden-restaurant">
+                                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="The Garden Restaurant">
+                                    <div class="card-content">
+                                        <h3>The Garden Restaurant</h3>
+                                        <p>Fine dining with a view of the city</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Kilimani, Nairobi</span>
+                                            <span class="category">Restaurants</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="200" data-business-id="fitlife-gym">
+                                    <img src="https://images.unsplash.com/photo-1521783988139-89397d761dce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3ltfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="FitLife Gym">
+                                    <div class="card-content">
+                                        <h3>FitLife Gym</h3>
+                                        <p>24/7 Premium Fitness Center</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Lavington, Nairobi</span>
+                                            <span class="category">Health & Fitness</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="location-pane" id="nyahururu">
+                            <div class="cards-grid">
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-business-id="waya-moja-enterprise-nyahururu">
+                                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29ycG9yYXRlJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="WAYA MOJA ENTERPRISE Nyahururu">
+                                    <div class="card-content">
+                                        <h3>WAYA MOJA ENTERPRISE</h3>
+                                        <p>Nyahururu Branch - Regional Office</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Town Center, Nyahururu</span>
+                                            <span class="category">Technology & Consulting</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="100" data-business-id="thomson-falls-academy">
+                                    <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Thomson Falls Academy">
+                                    <div class="card-content">
+                                        <h3>Thomson Falls Academy</h3>
+                                        <p>Premier Educational Institution</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Thomson Falls, Nyahururu</span>
+                                            <span class="category">Education</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="200" data-business-id="sweet-treats-bakery">
+                                    <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFrZXJ5fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Sweet Treats Bakery">
+                                    <div class="card-content">
+                                        <h3>Sweet Treats Bakery</h3>
+                                        <p>Fresh Pastries & Custom Cakes</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Main Street, Nyahururu</span>
+                                            <span class="category">Food & Bakery</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="location-pane" id="mombasa">
+                            <div class="cards-grid">
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-business-id="ocean-breeze-restaurant">
+                                    <img src="https://images.unsplash.com/photo-1619273013923-b981d8c59f33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9tYmFzYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Ocean Breeze Restaurant">
+                                    <div class="card-content">
+                                        <h3>Ocean Breeze Restaurant</h3>
+                                        <p>Authentic coastal cuisine with ocean view</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Nyali, Mombasa</span>
+                                            <span class="category">Restaurants</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="100" data-business-id="coastal-paradise-resort">
+                                    <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmVzb3J0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Coastal Paradise Resort">
+                                    <div class="card-content">
+                                        <h3>Coastal Paradise Resort</h3>
+                                        <p>Luxury Beachfront Accommodation</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Diani Beach, Mombasa</span>
+                                            <span class="category">Hotels & Resorts</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="200" data-business-id="serene-spa-wellness">
+                                    <img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3BhfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Serene Spa & Wellness">
+                                    <div class="card-content">
+                                        <h3>Serene Spa & Wellness</h3>
+                                        <p>Luxury Spa & Wellness Center</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Bamburi, Mombasa</span>
+                                            <span class="category">Health & Wellness</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="location-pane" id="kisumu">
+                            <div class="cards-grid">
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-business-id="lakeside-cafe">
+                                    <img src="https://images.unsplash.com/photo-1560624052-449f5ddf0c31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FmZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Lakeside Café">
+                                    <div class="card-content">
+                                        <h3>Lakeside Café</h3>
+                                        <p>Coffee & Breakfast with Lake Victoria View</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> CBD, Kisumu</span>
+                                            <span class="category">Cafes</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="100" data-business-id="victoria-mall">
+                                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2hvcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Victoria Mall">
+                                    <div class="card-content">
+                                        <h3>Victoria Mall</h3>
+                                        <p>Premier Shopping Destination</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Milimani, Kisumu</span>
+                                            <span class="category">Shopping</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="location-pane" id="nakuru">
+                            <div class="cards-grid">
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-business-id="flamingo-hill-resort">
+                                    <img src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWwlMjByb29tfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Flamingo Hill Resort">
+                                    <div class="card-content">
+                                        <h3>Flamingo Hill Resort</h3>
+                                        <p>Luxury Accommodation with Lake View</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Lake Nakuru, Nakuru</span>
+                                            <span class="category">Hotels</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="100" data-business-id="green-thumb-nursery">
+                                    <img src="https://images.unsplash.com/photo-1606293926075-91acedf0f59e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2FyZGVufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Green Thumb Nursery">
+                                    <div class="card-content">
+                                        <h3>Green Thumb Nursery</h3>
+                                        <p>Plants, Garden Supplies & Landscaping</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Section 58, Nakuru</span>
+                                            <span class="category">Garden & Landscape</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="location-pane" id="eldoret">
+                            <div class="cards-grid">
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-business-id="champions-sports-academy">
+                                    <img src="https://images.unsplash.com/photo-1577301656762-3e46c1996100?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3BvcnRzJTIwY2VudGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Champions Sports Academy">
+                                    <div class="card-content">
+                                        <h3>Champions Sports Academy</h3>
+                                        <p>Professional Sports Training & Facilities</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Pioneer, Eldoret</span>
+                                            <span class="category">Sports & Recreation</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="100" data-business-id="healthfirst-clinic">
+                                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVkaWNhbCUyMGNsaW5pY3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="HealthFirst Clinic">
+                                    <div class="card-content">
+                                        <h3>HealthFirst Clinic</h3>
+                                        <p>Modern Medical Facility & Specialists</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Town Center, Eldoret</span>
+                                            <span class="category">Healthcare</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="200" data-business-id="highland-restaurant">
+                                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Highland Restaurant">
+                                    <div class="card-content">
+                                        <h3>Highland Restaurant</h3>
+                                        <p>Local & International Cuisine</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Rupa Mall, Eldoret</span>
+                                            <span class="category">Restaurants</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="location-pane" id="thika">
+                            <div class="cards-grid">
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-business-id="mount-kenya-university">
+                                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29sbGVnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Mount Kenya University">
+                                    <div class="card-content">
+                                        <h3>Mount Kenya University</h3>
+                                        <p>Higher Education & Professional Training</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Thika Road, Thika</span>
+                                            <span class="category">Education</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="100" data-business-id="thika-mall">
+                                    <img src="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcHBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Thika Mall">
+                                    <div class="card-content">
+                                        <h3>Thika Mall</h3>
+                                        <p>Shopping, Entertainment & Dining</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Central, Thika</span>
+                                            <span class="category">Shopping</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="business-profile.html" class="business-card" data-aos="fade-up" data-aos-delay="200" data-business-id="blue-post-hotel">
+                                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Blue Post Hotel">
+                                    <div class="card-content">
+                                        <h3>Blue Post Hotel</h3>
+                                        <p>Historic Hotel & Conference Center</p>
+                                        <div class="business-details">
+                                            <span class="location"><i class="fas fa-map-marker-alt"></i> Blue Post, Thika</span>
+                                            <span class="category">Hotels</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-business-listing" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">Why List Your Business With Us?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card" data-aos="fade-up">
+                        <i class="fas fa-globe"></i>
+                        <h3>Increased Visibility</h3>
+                        <p>Get your business in front of thousands of potential customers actively searching for services like yours.</p>
+                    </div>
+                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Business Growth</h3>
+                        <p>Join hundreds of businesses that have experienced significant growth through our platform.</p>
+                    </div>
+                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-star"></i>
+                        <h3>Build Credibility</h3>
+                        <p>Showcase your reviews and ratings to build trust with potential customers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section" data-aos="fade-up">
+            <h2>About Us</h2>
+            <p>MyLocalBizDirectory.com is your premier platform for discovering and connecting with local businesses in Kenya. We're committed to supporting local commerce and helping businesses thrive in the digital age.</p>
+        </section>
+
+        <section id="services" class="services-section" data-aos="fade-up">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <i class="fas fa-store"></i>
+                    <h3>Business Listings</h3>
+                    <p>List your business and reach more customers</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-search"></i>
+                    <h3>Business Discovery</h3>
+                    <p>Find the perfect local business for your needs</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-star"></i>
+                    <h3>Reviews & Ratings</h3>
+                    <p>Share your experiences and help others decide</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" data-aos="fade-up">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name" data-aos="fade-up">
+                <input type="email" placeholder="Your Email" data-aos="fade-up">
+                <textarea placeholder="Your Message" data-aos="fade-up"></textarea>
+                <button type="submit" data-aos="fade-up">Send Message</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your trusted local business directory connecting communities with great local businesses in Kenya.</p>
             </div>
             
-            <div class="features">
-                <div class="feature">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Business Growth" class="feature-image">
-                    <h3>Growing Businesses</h3>
-                    <p>List your business and reach more customers. Join our growing network of successful local entrepreneurs.</p>
-                </div>
-                
-                <div class="feature">
-                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Job Opportunities" class="feature-image">
-                    <h3>Job Opportunities</h3>
-                    <p>Find employment opportunities with local businesses. Connect with employers looking for talent in your area.</p>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="submit-business.html">List Your Business</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: mwangiianjk20@gmail.com</p>
+                <p>Phone: +254718434557</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
-        </section>
-
-        <section id="business-list">
-            <h2>Featured Businesses</h2>
-            <ul>
-                <li>Tech Solutions Inc - <a href="#" onclick="showDetails(this, 'Tech Solutions Inc', 'IT Services')">View Details</a></li>
-                <li>Green Garden Cafe - <a href="#" onclick="showDetails(this, 'Green Garden Cafe', 'Restaurant')">View Details</a></li>
-                <li>Fitness First Gym - <a href="#" onclick="showDetails(this, 'Fitness First Gym', 'Health & Fitness')">View Details</a></li>
-                <li>WAYAMOJA ENTERPRISE - <a href="#" onclick="showDetails(this, 'WAYAMOJA ENTERPRISE', 'Internet service provider', 'Chaphi house, 1st floor, Room 20, PO.BOX 1927-20300, Nyahururu, Kenya')">View Details</a></li>
-            </ul>
-        </section>
-
-        <section class="testimonials">
-            <h2>What Our Users Say</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial">
-                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150" alt="User 1" class="testimonial-image">
-                    <p>"This directory helped me find the perfect local supplier for my small business. Highly recommended!"</p>
-                    <h4>Sarah Johnson</h4>
-                    <p class="role">Small Business Owner</p>
-                </div>
-                <div class="testimonial">
-                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150" alt="User 2" class="testimonial-image">
-                    <p>"I listed my business here and saw an immediate increase in customer inquiries. Great platform!"</p>
-                    <h4>John Smith</h4>
-                    <p class="role">Local Restaurant Owner</p>
+            
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
-        </section>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 MyLocalBizDirectory.com. All rights reserved.</p>
+        </div>
+    </footer>
 
-        <section class="why-choose-us">
-            <h2>Why Choose Our Directory?</h2>
-            <div class="benefits-grid">
-                <div class="benefit">
-                    <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d" alt="Verified Listings" class="benefit-image">
-                    <h3>Verified Listings</h3>
-                    <p>All businesses are verified to ensure quality and reliability.</p>
-                </div>
-                <div class="benefit">
-                    <img src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1" alt="Local Support" class="benefit-image">
-                    <h3>Local Support</h3>
-                    <p>We focus on supporting and promoting local businesses in your community.</p>
-                </div>
-                <div class="benefit">
-                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" alt="Easy Access" class="benefit-image">
-                    <h3>Easy Access</h3>
-                    <p>Simple and intuitive platform to find or list businesses quickly.</p>
-                </div>
-            </div>
-        </section>
-
-        <button onclick="addBusiness()" class="add-business-btn">Add Your Business</button>
-
-        <footer>
-            <p>&copy; 2024 Business Directory. All rights reserved.</p>
-        </footer>
-    </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
