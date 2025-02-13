@@ -488,14 +488,34 @@ function addReview(businessId, rating, comment) {
 }
 
 // Mobile menu toggle
-const mobileMenuButton = document.querySelector('.mobile-menu-button');
-const navLinks = document.querySelector('.nav-links');
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            const isExpanded = navLinks.classList.contains('active');
+            menuToggle.setAttribute('aria-expanded', isExpanded);
+        });
+    }
 
-if (mobileMenuButton) {
-    mobileMenuButton.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.nav-links') && !event.target.closest('.menu-toggle')) {
+            navLinks.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        }
     });
-}
+
+    // Close menu when window is resized to desktop size
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            navLinks.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        }
+    });
+});
 
 // Show details functionality
 function showDetails(element, businessName, category, location = '', phone = '', email = '', hours = '') {
@@ -815,4 +835,4 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
-});
+}};
