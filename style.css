@@ -2,7 +2,7 @@
     --primary-color: #7209b7;
     --secondary-color: #3a0ca3;
     --accent-color: #f72585;
-    --background-color: #4361ee;
+    --background-color: #4361ee; 
     --card-bg: #ffffff;
     --text-color: #ffffff;
     --text-light: #e2e8f0;
@@ -477,30 +477,96 @@ body::before {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        padding-top: 0;
+    }
+
     .top-menu {
-        flex-direction: column;
+        position: relative;
         padding: 10px;
     }
 
     .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .search-container {
+        width: 100%;
         margin: 10px 0;
     }
 
     .action-buttons {
         width: 100%;
-        justify-content: center;
-    }
-
-    .hero-section {
-        margin-top: 160px;
-    }
-
-    .main-search {
+        display: flex;
         flex-direction: column;
+        gap: 10px;
+    }
+
+    .action-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 24px;
+        color: var(--text-color);
+        cursor: pointer;
+    }
+
+    .container {
+        margin: 10px;
+        padding: 15px;
     }
 
     .cards-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .business-card {
+        margin: 0;
+    }
+
+    .tabs-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .location-tabs {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        gap: 10px;
+    }
+
+    .location-tab-btn {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
     }
 }
 
